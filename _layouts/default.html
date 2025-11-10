@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 頁面標題 -->
+  <title>{{ page.title }} | Daily SEO News</title>
+
+  <!-- SEO -->
+  <meta name="description" content="{{ page.description | default: '每日追蹤最新 SEO、AI 搜尋、Google 更新與行銷趨勢' }}">
+
+  <!-- Fonts (科技風) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+</head>
+
+<body>
+
+  <!-- === Header === -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">Daily SEO News</a>
+      </h1>
+    </div>
+  </header>
+
+  <!-- === Main Content === -->
+  <main class="container main-content">
+    {{ content }}
+  </main>
+
+  <!-- === Footer === -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {{ site.time | date: "%Y" }} Daily SEO News — Powered by Jekyll & GitHub Pages</p>
+    </div>
+  </footer>
+
+</body>
+</html>
