@@ -1,0 +1,24 @@
+title: 每日 SEO 新聞
+description: 自動化產出，每天一篇
+timezone: Asia/Taipei
+
+# 使用 GitHub Pages 內建主題（最省事）
+theme: minima
+
+# 文章網址格式
+permalink: /:year/:month/:day/:title:output_ext
+
+# 首頁每頁顯示幾篇文章
+paginate: 10
+paginate_path: "/page:num/"
+
+# GitHub Pages 白名單外掛
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Minima 的一些設定（可選）
+minima:
+  skin: classic
+  social_links:
+    - { platform: github, user_url: "https://github.com/AndyWei1123" }
