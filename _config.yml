@@ -22,3 +22,10 @@ minima:
   skin: classic
   social_links:
     - { platform: github, user_url: "https://github.com/AndyWei1123" }
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "default"
