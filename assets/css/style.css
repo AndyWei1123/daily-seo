@@ -1,0 +1,155 @@
+/* =====================================
+   科技風 Daily SEO 樣式
+   配色：科技藍 (#0A84FF) + 白色 + 深灰
+   字體：Noto Sans TC
+===================================== */
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background: #f7faff;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- 全域連結樣式 ----- */
+a {
+  color: #0A84FF;
+  text-decoration: none;
+}
+a:hover {
+  color: #0066dd;
+  text-decoration: underline;
+}
+
+/* ----- 文章內容區域 ----- */
+.post-content {
+  max-width: 880px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+/* ----- 標題樣式 ----- */
+.post-title, h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0A59CC;
+  border-bottom: 2px solid #0A84FF;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
+
+/* H2 標題：左側藍線 + 微陰影 */
+h2 {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 4px solid #0A84FF;
+  color: #003366;
+}
+
+/* H3 標題 */
+h3 {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  color: #004a99;
+}
+
+/* ----- 文章列表卡片（首頁） ----- */
+.post-list {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.post-card {
+  background: #ffffff;
+  border: 1px solid #e5ebf3;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 14px rgba(0, 50, 120, 0.07);
+  transition: all .2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 50, 120, 0.12);
+}
+
+.post-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0A59CC;
+  margin-bottom: 8px;
+}
+
+.post-card-meta {
+  font-size: 0.9rem;
+  color: #637188;
+  margin-bottom: 12px;
+}
+
+.post-card-excerpt {
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ----- 分類標籤 ----- */
+.category-tag {
+  background: #0A84FF;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-right: 10px;
+}
+
+/* ----- 文章內的引用區塊 ----- */
+blockquote {
+  border-left: 4px solid #0A84FF;
+  padding-left: 15px;
+  margin-left: 0;
+  color: #4a4a4a;
+  font-style: italic;
+  background: #f2f7ff;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+/* ----- 表格（科技風） ----- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+table th {
+  background: #0A84FF;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+table td {
+  border-bottom: 1px solid #e5ebf3;
+  padding: 12px;
+}
+
+/* ----- 手機版 RWD ----- */
+@media (max-width: 768px) {
+  .post-content {
+    padding: 10px;
+    font-size: 17px;
+  }
+  .post-title, h1 {
+    font-size: 1.9rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
